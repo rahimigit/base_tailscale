@@ -2,10 +2,8 @@
 name: Ansible Molecule
 
 on:
-  push:
-    tags_ignore:
-      - '*'
-  pull_request:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   lint:
